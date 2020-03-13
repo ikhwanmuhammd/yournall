@@ -40,7 +40,7 @@
     <div class="container">
 
       <div class="logo float-left">
-        <h1 class="text-light"><a href="#"><span>YournAll</span></a></h1>
+        <h1 class="text-light"><a href="<?php echo base_url('home') ?>"><span>YournAll</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -50,8 +50,8 @@
           <li class="active"><a href="index.html">Home</a></li>
           <li class="drop-down"><a href="">Search</a>
             <ul>
-              <li><a href="#">Journal National</a></li>
-              <li><a href="#">Journal International</a></li>
+              <li><a href="<?php echo base_url('journal_national') ?>">Journal National</a></li>
+              <li><a href="<?php echo base_url('journal_international') ?>">Journal International</a></li>
             </ul>
           </li>
           <li><a href="#">About</a></li>
