@@ -47,15 +47,15 @@
 
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li class="drop-down"><a href="">Search</a>
+          <li class="active mr-5"><a href="<?php echo base_url('home') ?>">Home</a></li>
+          <li class="drop-down mr-5"><a href="">Search</a>
             <ul>
               <li><a href="<?php echo base_url('journal_national') ?>">Journal National</a></li>
               <li><a href="<?php echo base_url('journal_international') ?>">Journal International</a></li>
             </ul>
           </li>
-          <li><a href="#">About</a></li>
-          <li class="drop-down"><a href="">User</a>
+          <li class="mr-5"><a href="#">About</a></li>
+          <li class="drop-down mr-5"><a href="">User</a>
             <ul>
               <li><a href="#">Login</a></li>
               <li><a href="#">Register</a></li>

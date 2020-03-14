@@ -5,7 +5,7 @@ class Journal_international extends CI_Controller {
 
 	public function index(){
 		$this->load->view('templates/header');
-		$this->load->view('pages/v_jnat');
+		$this->load->view('pages/v_jinter');
 		$this->load->view('templates/footer');
 	}
 }

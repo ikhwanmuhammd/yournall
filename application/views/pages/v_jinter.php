@@ -1,54 +1,37 @@
 <title>YournAll</title>
+<div class="content-wrapper">
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+  <section id="hero" class="d-flex justify-content-center align-items-center">
     <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
 
       <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="carousel-container">
-          <h2 class="animated fadeInDown">Welcome to <span>YournAll</span></h2>
-          <p class="animated fadeInUp">Merupakan situs web pencarian Journal dengan tingkat akurasi 0,00001%. Karena masih dalam tahap pengembangan, situs ini masih belum dapat diakses melalui internet.</p>
-          <a href="" class="btn-get-started animated fadeInUp">Read More</a>
+          <h2 class="animated fadeInDown">Are you looking for <span>Journal International?</span></h2>
+          <form class="animated fadeInDown" action="" method="post">
+            <input class="form-control transparent-input" type="text" name="search_jinter" placeholder="Wrote somethings. .">
+          </form> <br>
+          <a href="" class="btn-get-started animated fadeInUp">Search</a>
         </div>
       </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2 class="animated fadeInDown">Lorem Ipsum Dolor</h2>
-          <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-          <a href="" class="btn-get-started animated fadeInUp">Read More</a>
+    <!-- <div class="carousel-item active">
+      <div class="carousel-container">
+        <div class="col-lg-6">
+          <form action="" method="post">
+          <input type="email" name="email"><input type="submit" value="Subscribe">
+          </form>
         </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2 class="animated fadeInDown">Sequi ea ut et est quaerat</h2>
-          <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-          <a href="" class="btn-get-started animated fadeInUp">Read More</a>
-        </div>
-      </div>
-
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-
+      </div> -->
     </div>
+    
   </section><!-- End Hero -->
 
   <main id="main">
 
     <!-- ======= Search ======= -->
     <section class="services">
-      
     </section><!-- End Search -->
 
   </main><!-- End #main -->
+</div>
