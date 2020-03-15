@@ -10,19 +10,11 @@
         <div class="carousel-container">
           <h2 class="animated fadeInDown">Are you looking for <span>Journal International?</span></h2>
           <form class="animated fadeInDown" action="" method="post">
-            <input class="form-control transparent-input" type="text" name="search_jinter" placeholder="Wrote somethings. .">
+            <input class="form-control transparent-input" type="text" name="search_jinter" placeholder="Wrote somethings. ." style="width:500px;">
           </form> <br>
           <a href="" class="btn-get-started animated fadeInUp">Search</a>
         </div>
       </div>
-    <!-- <div class="carousel-item active">
-      <div class="carousel-container">
-        <div class="col-lg-6">
-          <form action="" method="post">
-          <input type="email" name="email"><input type="submit" value="Subscribe">
-          </form>
-        </div>
-      </div> -->
     </div>
     
   </section><!-- End Hero -->

@@ -2197,3 +2197,15 @@ section {
 #footer .credits a {
   color: #a2cce3;
 }
+
+.btn-circle {
+  border-radius: 30px;
+}
+.box-login {
+  /*height: 400px;*/
+  /*max-width: 600px;*/
+  text-align: center;
+  /*line-height: 400px;*/
+  background-image: url(assets/img/bg_login.jpg);
+  background-repeat: no-repeat;
+}
