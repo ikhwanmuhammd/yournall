@@ -80,8 +80,10 @@
   <script src="<?php echo base_url() ?>assets/vendor/aos/aos.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="<?php echo base_url() ?>assets/js/sb-admin-2.min.js"></script>
   <script src="<?php echo base_url() ?>assets/js/main.js"></script>
   <script src="<?php echo base_url() ?>assets/js/myjavascript.js"></script>
+
 
 </body>
 
