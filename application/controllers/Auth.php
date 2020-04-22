@@ -52,9 +52,9 @@ class Auth extends CI_Controller
 
 					//cek role user
 					if ($user['role_id'] == 1) {
-						redirect('administrator/administrator');
+						redirect('administrator/dashboard');
 					} else {
-						redirect('member/user');
+						redirect('member/home');
 					}
 				} else {
 					$this->session->set_flashdata('pesan', '<div class="alert alert-danger" role="alert">Wrong password!</div>');
