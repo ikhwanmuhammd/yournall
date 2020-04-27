@@ -8,8 +8,9 @@ class Dashboard extends CI_Controller
 	{
 		$data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
+		$this->load->view('pages/administrator/templates/a_header');
 		$this->load->view('pages/administrator/templates/a_sidebar');
-		$this->load->view('pages/administrator/templates/a_header', $data);
+		$this->load->view('pages/administrator/templates/a_topbar', $data);
 		$this->load->view('pages/administrator/v_dashboard');
 		$this->load->view('pages/administrator/templates/a_footer');
 	}
