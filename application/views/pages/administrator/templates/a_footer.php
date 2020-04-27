@@ -45,10 +45,15 @@
   <!-- Core plugin JavaScript-->
   <script src="<?php echo base_url() ?>assets/vendor/jquery-easing/jquery.easing.min.js"></script>
 
+  <!-- SweetAlert2 -->
+  <script src="<?php echo base_url() ?>assets/plugins/sweetalert2/sweetalert2.all.min.js"></script>
+
   <!-- Custom scripts for all pages-->
   <script src="<?php echo base_url() ?>assets/js/sb-admin-2.min.js"></script>
   <script src="<?php echo base_url() ?>assets/js/adminscript.js"></script>
   <script src="<?php echo base_url() ?>assets/js/tabel.js"></script>
+  <script src="<?php echo base_url() ?>assets/js/flashscript.js"></script>
+  <script src="<?php echo base_url() ?>assets/js/modalscript.js"></script>
 
   <!-- Page level plugins -->
   <script src="<?php echo base_url() ?>assets/vendor/datatables/jquery.dataTables.min.js"></script>

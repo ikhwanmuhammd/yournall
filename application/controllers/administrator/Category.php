@@ -16,4 +16,28 @@ class Category extends CI_Controller
         $this->load->view('pages/administrator/v_category', $data);
         $this->load->view('pages/administrator/templates/a_footer');
     }
+
+    public function add()
+    {
+
+        $this->m_journal->add_category();
+        $this->session->set_flashdata('flash', 'Added');
+        redirect('administrator/category');
+    }
+
+    public function edit()
+    {
+
+        $this->m_journal->edit_category($data, $id);
+        $this->session->set_flashdata('flash', 'Edited');
+        redirect('administrator/category');
+    }
+
+    public function delete($id)
+    {
+
+        $this->m_journal->delete_category($id);
+        $this->session->set_flashdata('flash', 'Deleted');
+        redirect('administrator/category');
+    }
 }

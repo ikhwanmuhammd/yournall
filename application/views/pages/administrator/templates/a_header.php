@@ -21,4 +21,7 @@
   <!-- Custom styles for this page -->
   <link href="<?php echo base_url() ?>assets/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
+  <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="<?php echo base_url() ?>assets/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+
 </head>
