@@ -54,7 +54,7 @@
 <div class="modal fade" id="modal-add-category">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header bg-primary">
                 <h4 class="modal-title">Add Category</h4>
             </div>
             <!-- form start -->
@@ -82,7 +82,7 @@
 <div class="modal fade" id="modal-edit-category">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header bg-warning">
                 <h4 class="modal-title">Edit Category</h4>
             </div>
             <!-- form start -->
@@ -91,7 +91,7 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="category_name">Category Name</label>
-                        <input type="text" class="form-control" id="category_name" placeholder="Add.." name="category_name" value="" required>
+                        <input type="text" class="form-control" id="category_name" placeholder="Edit.." name="category_name" required>
                     </div>
                 </div>
                 <!-- /.modal-body -->

@@ -12,15 +12,15 @@ class m_journal extends CI_Model
 		return $this->db->get('category');
 	}
 
-	public function add_journal()
+	public function add_journal($data)
 	{
-		// $data = array(
-		// 	'kode_desa' => $this->input->post('kode_desa', TRUE),
-		// 	'nama_desa' => strtoupper($this->input->post('nama_desa', TRUE)),
-		// 	'nama_kepala_desa' => strtoupper($this->input->post('nama_kepala_desa', TRUE)),
-		// 	'nama_kecamatan' => strtoupper($this->input->post('nama_kecamatan', TRUE))
-		// );
-		// $this->db->insert('tb_desa',$data);
+		return $this->db->insert('journal', $data);
+	}
+
+	public function del_journal($id)
+	{
+		$this->db->where('id', $id);
+		$this->db->delete('journal');
 	}
 
 	public function add_category()

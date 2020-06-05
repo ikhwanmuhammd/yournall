@@ -37,8 +37,8 @@ $('.tombol-delete').on('click', function (e) {
 		text: "Delete " + page,
 		type: 'warning',
 		showCancelButton: true,
-		confirmButtonText: 'Ya',
-		cancelButtonText: 'Tidak',
+		confirmButtonText: 'Yes',
+		cancelButtonText: 'No',
 		reverseButtons: true
 	}).then((result) => {
 		if (result.value) {

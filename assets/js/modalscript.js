@@ -1,4 +1,4 @@
-//ubah data desa
+//ubah data category
 $(function () {
 	$('#modal-edit-category').on('show.bs.modal', function (event) {
 
@@ -8,6 +8,7 @@ $(function () {
 		// Isi nilai pada field
 		$('#id').val(div.data('id'));
 		$('#category_name').val(div.data('category_name'));
+
 	});
 
 });
