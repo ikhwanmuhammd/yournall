@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  
+
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -34,6 +34,7 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+
 <body>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top header-transparent">
@@ -55,12 +56,16 @@
             </ul>
           </li>
           <li class="mr-5"><a href="#">About</a></li>
-          <li class="drop-down mr-5"><a href="">User</a>
+          <li class="drop-down mr-5"><a href="">
+              <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= $user['name']; ?></span>
+              <img class="img-profile rounded-circle" src="<?= base_url('assets/img/profile/') . $user['photo']; ?>">
+            </a>
             <ul>
-              <li><a href="#">Login</a></li>
-              <li><a href="#">Register</a></li>
+              <li><a href="<?php echo base_url('') ?>">Edit Profile</a></li>
+              <li><a href="<?php echo base_url('') ?>">Logout</a></li>
             </ul>
-          </li><!-- 
+          </li>
+          <!-- 
           <li><a href="" class="btn-get-started animated fadeInUp">Login</a></li>
           <li><a href="" class="btn-get-started animated fadeInUp">Register</a></li> -->
         </ul>
