@@ -16,9 +16,9 @@
 			<a href="<?= base_url('administrator/category') ?>" class="btn btn-success btn-sm mb-2 ml-2">Category</a>
 			<table id="tabel-jurnal" class="table table-bordered">
 				<div class="btn-group float-right" role="group" aria-label="Sort By">
-					<a href="<?= base_url('journal/get_journal') ?>" class="btn btn-dark btn-sm">All</a>
-					<a href="<?= base_url('journal/journal_int') ?>" class="btn btn-success btn-sm">International</a>
-					<a href="<?= base_url('journal/journal_nat') ?>" class="btn btn-danger btn-sm">National</a>
+					<a href="<?= base_url('administrator/journal/') ?>" class="btn btn-dark btn-sm">All</a>
+					<a href="<?= base_url('administrator/journal/journal_int') ?>" class="btn btn-success btn-sm">International</a>
+					<a href="<?= base_url('administrator/journal/journal_nat') ?>" class="btn btn-danger btn-sm">National</a>
 				</div><br>
 				<thead>
 					<tr>
