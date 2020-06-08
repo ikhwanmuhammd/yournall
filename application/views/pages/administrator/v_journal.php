@@ -48,7 +48,7 @@
 								<a href="<?= base_url(); ?>administrator/journal/edit/<?= $j->id; ?>" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit fa-sm"></i></a>
 							</td>
 							<td width="20px">
-								<a href="<?= base_url(); ?>administrator/journal/download/<?= $j->id; ?>" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="Download"><i class="fa fa-download fa-sm"></i></a>
+								<a href="<?= base_url() . 'uploads/journal/' . $j->file; ?>" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="Download"><i class="fa fa-download fa-sm"></i></a>
 							</td>
 							<td width="20px">
 								<a href="<?= base_url(); ?>administrator/journal/delete/<?= $j->id; ?>" class="btn btn-danger btn-sm tombol-delete" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash fa-sm"></i></a>

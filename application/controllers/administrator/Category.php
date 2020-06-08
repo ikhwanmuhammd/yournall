@@ -8,7 +8,7 @@ class Category extends CI_Controller
     {
         $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
 
-        $data['category'] = $this->m_journal->get_category()->result();
+        $data['category'] = $this->m_category->get_category()->result();
 
         $this->load->view('pages/administrator/templates/a_header');
         $this->load->view('pages/administrator/templates/a_sidebar');
@@ -20,7 +20,7 @@ class Category extends CI_Controller
     public function add()
     {
 
-        $this->m_journal->add_category();
+        $this->m_category->add_category();
         $this->session->set_flashdata('flash', 'Added');
         redirect('administrator/category');
     }
@@ -28,7 +28,13 @@ class Category extends CI_Controller
     public function edit()
     {
 
-        $this->m_journal->edit_category($data, $id);
+        $id = $this->input->post('id');
+        $data = array(
+            'id' => $this->input->post('id', TRUE),
+            'category_name' => $this->input->post('category_name', TRUE)
+        );
+
+        $this->m_category->edit_category($data, $id);
         $this->session->set_flashdata('flash', 'Edited');
         redirect('administrator/category');
     }
@@ -36,7 +42,7 @@ class Category extends CI_Controller
     public function delete($id)
     {
 
-        $this->m_journal->delete_category($id);
+        $this->m_category->delete_category($id);
         $this->session->set_flashdata('flash', 'Deleted');
         redirect('administrator/category');
     }

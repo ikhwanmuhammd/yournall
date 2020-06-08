@@ -16,8 +16,9 @@
                 <!-- /.box-header -->
                 <!-- form start -->
                 <!-- <form role="form" action="<?= base_url("journal/save") ?>" method="post" enctype="multipart/form-data"> -->
-                <?php echo form_open_multipart('administrator/journal/save'); ?>
+                <?php echo form_open_multipart('administrator/journal/update'); ?>
                 <div class="box-body">
+                    <input type="hidden" name="id" id="id">
                     <div class="form-group">
                         <label for="issn">ISSN</label>
                         <input type="text" class="form-control" id="issn" placeholder="ISSN" name="issn" value="<?= $journal->issn ?>" required>
@@ -62,10 +63,11 @@
                     <div class="form-group">
                         <?php if ($journal->file != null) { ?>
                             <label for="file">
+                                File :
                                 <?= $journal->file; ?>
                             </label>
-                        <?php } ?>
-                        <input type="file" id="file" name="file" required>
+                        <?php } ?><br>
+                        <input type="file" id="file" name="file" <?php if ($journal->file = null) echo 'required'; ?>>
                     </div>
                 </div>
                 <!-- /.box-body -->
