@@ -9,8 +9,8 @@ class m_user extends CI_Model
 
     public function u_admin()
     {
-        $admin = array('1');
-        $this->db->where_in('type', $admin);
+        // $admin = array('1');
+        $this->db->where_in('role_id', '1');
         return $this->db->get('user');
     }
 

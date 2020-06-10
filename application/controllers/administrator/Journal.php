@@ -69,11 +69,14 @@ class Journal extends CI_Controller
 
 	public function save()
 	{
+		$user = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
 		$issn 			= $this->input->post('issn');
 		$title 			= $this->input->post('title');
 		$type 			= $this->input->post('type');
 		$category 		= $this->input->post('category');
 		$year 			= $this->input->post('year');
+		$upload_by		= $user->name;
 		$file 			= $_FILES['file'];
 		if ($file = '') {
 		} else {
@@ -96,6 +99,7 @@ class Journal extends CI_Controller
 			'type'			=> $type,
 			'category'		=> $category,
 			'year'			=> $year,
+			'upload_by'		=> $upload_by,
 			'file'			=> $file
 
 		);
@@ -106,7 +110,6 @@ class Journal extends CI_Controller
 
 	public function update()
 	{
-
 		$id 	= $this->input->post('id');
 		$file	= $_FILES['file'];
 		if ($file = '') {
