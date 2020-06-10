@@ -28,6 +28,7 @@
 						<th>Category</th>
 						<th>Year</th>
 						<th>Date Upload</th>
+						<th>Upload By</th>
 						<th></th>
 						<th></th>
 						<th></th>
@@ -44,6 +45,7 @@
 							<td><?php echo $j->category ?></td>
 							<td><?php echo $j->year ?></td>
 							<td><?php echo $j->date_upload ?></td>
+							<td><?php echo $j->upload_by ?></td>
 							<td width="20px">
 								<a href="<?= base_url(); ?>administrator/journal/edit/<?= $j->id; ?>" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit fa-sm"></i></a>
 							</td>

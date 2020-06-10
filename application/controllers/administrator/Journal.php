@@ -76,7 +76,7 @@ class Journal extends CI_Controller
 		$type 			= $this->input->post('type');
 		$category 		= $this->input->post('category');
 		$year 			= $this->input->post('year');
-		$upload_by		= $user->name;
+		$upload_by		= $user['name'];
 		$file 			= $_FILES['file'];
 		if ($file = '') {
 		} else {
