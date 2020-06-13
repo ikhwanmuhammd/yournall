@@ -37,28 +37,29 @@
 
 <body>
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-transparent">
+  <header id="header" class="fixed-top">
     <div class="container">
 
       <div class="logo float-left">
-        <h1 class="text-light"><a href="<?php echo base_url('home') ?>"><span>YournAll</span></a></h1>
+        <h1 class="text-light"><a href="<?php echo base_url('member/home') ?>"><span>YournAll</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li class="active mr-5"><a href="<?php echo base_url('home') ?>">Home</a></li>
+          <li class="active mr-5"><a href="<?php echo base_url('member/home') ?>">Home</a></li>
           <li class="drop-down mr-5"><a href="">Search</a>
             <ul>
-              <li><a href="<?php echo base_url('journal_national') ?>">Journal National</a></li>
-              <li><a href="<?php echo base_url('journal_international') ?>">Journal International</a></li>
+              <li><a href="<?php echo base_url('member/journal_national') ?>">Journal National</a></li>
+              <li><a href="<?php echo base_url('member/journal_international') ?>">Journal International</a></li>
             </ul>
           </li>
-          <li class="mr-5"><a href="#">About</a></li>
+          <li class="mr-5"><a href="<?php echo base_url('member/about') ?>">About Us</a></li>
+          <li class="mr-5"><a href="<?php echo base_url('member/contact') ?>">Contact Us</a></li>
           <li class="drop-down mr-5"><a href="">
               <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= $user['name']; ?></span>
-              <img class="img-profile rounded-circle" src="<?= base_url('assets/img/profile/') . $user['photo']; ?>">
+              <img class="img-profile rounded-circle" style="width: 25px;" src="<?= base_url('assets/img/profile/') . $user['photo']; ?>">
             </a>
             <ul>
               <li><a href="<?php echo base_url('') ?>">Edit Profile</a></li>

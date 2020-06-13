@@ -1,4 +1,4 @@
-<title>YournAll</title>
+<title>YournAll - Journal International</title>
 <div class="content-wrapper">
 
   <!-- ======= Hero Section ======= -->
@@ -16,7 +16,7 @@
         </div>
       </div>
     </div>
-    
+
   </section><!-- End Hero -->
 
   <main id="main">
