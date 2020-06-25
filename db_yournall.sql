@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 28 Apr 2020 pada 01.39
+-- Waktu pembuatan: 25 Jun 2020 pada 18.08
 -- Versi server: 10.1.32-MariaDB
 -- Versi PHP: 7.2.5
 
@@ -38,12 +38,12 @@ CREATE TABLE `category` (
 --
 
 INSERT INTO `category` (`id`, `category_name`) VALUES
-(1, 'IT'),
-(2, 'Bussiness'),
-(3, 'Mechanical'),
+(2, 'Bussiness Management'),
+(3, 'Mechanic'),
 (4, 'Civil'),
 (5, 'Psycology'),
-(10, 'Example');
+(12, 'Math'),
+(15, 'Informatika');
 
 -- --------------------------------------------------------
 
@@ -55,10 +55,12 @@ CREATE TABLE `journal` (
   `id` int(11) NOT NULL,
   `issn` varchar(64) NOT NULL,
   `title` varchar(256) NOT NULL,
+  `abstract` varchar(10000) NOT NULL,
   `type` enum('National','International') NOT NULL,
   `category` varchar(128) NOT NULL,
   `year` varchar(11) NOT NULL,
-  `date_upload` varchar(50) NOT NULL,
+  `date_upload` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `upload_by` varchar(128) NOT NULL,
   `file` varchar(256) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -66,9 +68,9 @@ CREATE TABLE `journal` (
 -- Dumping data untuk tabel `journal`
 --
 
-INSERT INTO `journal` (`id`, `issn`, `title`, `type`, `category`, `year`, `date_upload`, `file`) VALUES
-(1, '265367156', 'Judul Jurnal Pertama', 'National', 'IT', '2019', '', ''),
-(2, '376273674', 'Judul Jurnal Kedua', 'International', 'Ekonomi', '2009', '', '');
+INSERT INTO `journal` (`id`, `issn`, `title`, `abstract`, `type`, `category`, `year`, `date_upload`, `upload_by`, `file`) VALUES
+(32, '67163746735', 'jurnal 1', 'Jurnal 1 merupakan tulisan khusus yang memuat artikel suatu bidang ilmu tertentu. Jurnal merupakan tulisan khusus yang memuat artikel suatu bidang ilmu tertentu. Jurnal juga merupakan tulisan yang dikeluarkan oleh seorang yang berkompeten di bidangnya dan diterbitkan oleh Suatu instansi (Lembaga). Astrophysical Journal – astronomi.', 'National', 'Bussiness Management', '2005', '2020-06-25 14:08:45', 'Muhammad Fikri', '05_use_case_diagram.pdf'),
+(33, '67163746737', 'jurnal 2', 'Jurnal 2 merupakan tulisan khusus yang memuat artikel suatu bidang ilmu tertentu. Jurnal merupakan tulisan khusus yang memuat artikel suatu bidang ilmu tertentu. Jurnal juga merupakan tulisan yang dikeluarkan oleh seorang yang berkompeten di bidangnya dan diterbitkan oleh Suatu instansi (Lembaga). Astrophysical Journal – astronomi.', 'National', 'Civil', '2007', '2020-06-25 14:08:55', 'Muhammad Ikhwanudin', '10_Naskah_Publikasi_Ilmiah.pdf');
 
 -- --------------------------------------------------------
 
@@ -150,13 +152,13 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT untuk tabel `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT untuk tabel `journal`
 --
 ALTER TABLE `journal`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT untuk tabel `user`

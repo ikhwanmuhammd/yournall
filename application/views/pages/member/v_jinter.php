@@ -12,7 +12,7 @@
           <form class="animated fadeInDown" action="" method="post">
             <input class="form-control transparent-input" type="text" name="search_jinter" placeholder="Wrote somethings. ." style="width:500px;">
           </form> <br>
-          <a href="" class="btn-get-started animated fadeInUp">Search</a>
+          <a href="<?= base_url('member/result/international') ?>" class="btn-get-started animated fadeInUp">Search</a>
         </div>
       </div>
     </div>

@@ -83,6 +83,12 @@
 <script src="<?php echo base_url() ?>assets/js/main.js"></script>
 <script src="<?php echo base_url() ?>assets/js/myjavascript.js"></script>
 
+<!-- Custom scripts for all pages-->
+<script src="<?php echo base_url() ?>assets/js/adminscript.js"></script>
+<script src="<?php echo base_url() ?>assets/js/tabel.js"></script>
+<script src="<?php echo base_url() ?>assets/js/flashscript.js"></script>
+<script src="<?php echo base_url() ?>assets/js/modalscript.js"></script>
+
 
 </body>
 

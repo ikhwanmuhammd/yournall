@@ -5,11 +5,12 @@
         <div class="container">
 
             <div class="d-flex justify-content-between align-items-center">
-                <h2>Result</h2>
+                <h2>Result Journal National</h2>
 
                 <ol>
                     <li><a href="#">Home</a></li>
                     <li>Result</li>
+                    <li>National</li>
                 </ol>
             </div>
 
@@ -24,7 +25,7 @@
 
                 <div class="col-lg-8 entries">
                     <?php
-                    foreach ($journal as $j) { ?>
+                    foreach ($journal_n as $j) { ?>
 
                         <article class="entry">
                             <h2 class="entry-title">
@@ -53,7 +54,6 @@
                     <?php } ?>
                 </div>
 
-
                 <div class="col-lg-4">
                     <div class="sidebar">
 
@@ -69,7 +69,7 @@
                         <div class="sidebar-item categories">
                             <ul>
                                 <?php
-                                foreach ($journal as $j) { ?>
+                                foreach ($journal_n as $j) { ?>
                                     <li>
                                         <a href=""><?php echo $j->category ?></a>
                                     </li>
@@ -81,15 +81,15 @@
                         <h3 class="sidebar-title">Years</h3>
                         <div class="sidebar-item categories">
                             <ul>
-                                <li><a href="#">General <span>(25)</span></a></li>
-                                <li><a href="#">Lifestyle <span>(12)</span></a></li>
-                                <li><a href="#">Travel <span>(5)</span></a></li>
-                                <li><a href="#">Design <span>(22)</span></a></li>
-                                <li><a href="#">Creative <span>(8)</span></a></li>
-                                <li><a href="#">Educaion <span>(14)</span></a></li>
+                                <?php
+                                foreach ($journal_n as $j) { ?>
+                                    <li>
+                                        <a href=""><?php echo $j->year ?></a>
+                                    </li>
+                                <?php } ?>
                             </ul>
 
-                        </div><!-- End sidebar year-->
+                        </div><!-- End sidebar categories-->
 
                     </div><!-- End sidebar -->
 

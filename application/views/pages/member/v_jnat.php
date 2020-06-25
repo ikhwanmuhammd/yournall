@@ -10,9 +10,9 @@
         <div class="carousel-container">
           <h2 class="animated fadeInDown">Are you looking for <span>Journal National?</span></h2>
           <form class="animated fadeInDown" action="" method="post">
-            <input class="form-control transparent-input" type="text" name="search_jinter" placeholder="Wrote somethings. ." style="width:500px;">
+            <input class="form-control transparent-input" type="text" name="search_jnat" placeholder="Wrote somethings. ." style="width:500px;">
           </form> <br>
-          <a href="" class="btn-get-started animated fadeInUp">Search</a>
+          <a href="<?= base_url('member/result/national') ?>" class="btn-get-started animated fadeInUp">Search</a>
         </div>
       </div>
     </div>
