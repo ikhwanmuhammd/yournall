@@ -27,6 +27,10 @@
                         <textarea type="text" class="form-control" rows="3" id="title" placeholder="Title" name="title" required></textarea>
                     </div>
                     <div class="form-group">
+                        <label for="abstract">Abstract</label>
+                        <textarea type="text" class="form-control" rows="5" id="abstract" placeholder="Abstract" name="abstract" required></textarea>
+                    </div>
+                    <div class="form-group">
                         <label for="type">Type Journal</label>
                         <div class="input-group ml-2">
                             <div class="custom-control custom-radio col-md-6">

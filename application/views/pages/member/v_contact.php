@@ -36,7 +36,7 @@
                             <div class="info-box">
                                 <i class="bx bx-envelope"></i>
                                 <h3>Email Us</h3>
-                                <p>yournall@gmail.com</p>
+                                <p>yournallindonesia@gmail.com</p>
                             </div>
                         </div>
                         <div class="col-md-6">

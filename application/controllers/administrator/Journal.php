@@ -73,6 +73,7 @@ class Journal extends CI_Controller
 
 		$issn 			= $this->input->post('issn');
 		$title 			= $this->input->post('title');
+		$abstract 		= $this->input->post('abstract');
 		$type 			= $this->input->post('type');
 		$category 		= $this->input->post('category');
 		$year 			= $this->input->post('year');
@@ -96,6 +97,7 @@ class Journal extends CI_Controller
 		$data = array(
 			'issn'			=> $issn,
 			'title'			=> $title,
+			'abstract'		=> $abstract,
 			'type'			=> $type,
 			'category'		=> $category,
 			'year'			=> $year,
