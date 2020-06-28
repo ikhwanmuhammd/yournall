@@ -35,7 +35,7 @@ $config['base_url'] = 'http://202.150.141.238:1324/yournall';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.html';
+$config['index_page'] = 'index.php';
 
 /*
 |--------------------------------------------------------------------------
