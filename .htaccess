@@ -1,4 +1,17 @@
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php/$1 [L]
+#RewriteEngine on
+#RewriteCond $1 !^(index\.php|resources|robots\.txt)
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+
+<IfModule mod_rewrite.c>
+
+    RewriteEngine on
+#    RewriteBase /var/www/
+
+    # If the start of the URL doesn't match one of these...
+    RewriteCond $1 !^(index\.php|robots\.txt|assets|cache|themes|uploads|css|images|js)
+
+    # Route through index.php
+    RewriteRule ^(.*)$ index.php/$1 [L]
+
+</IfModule>
